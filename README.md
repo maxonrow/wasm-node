@@ -22,4 +22,4 @@ wasm-node which contains wasm erc20 complied contract with GUI using bootstrap a
   `npm run server`
 
 
-> Note : To deploy and compile the erc20 contract you need to run durian virtual machine.[durian](https://github.com/nagarajmanjunath/durian.git)
+> Note : To deploy and compile the erc20 contract you need to run durian virtual machine [durian](https://github.com/b00f/durian.git)
