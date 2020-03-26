@@ -13,7 +13,6 @@ function deploy(from_address) {
     var codeHex = '0x' + fs.readFileSync("./erc-20/wasmcontract/erc20.wasm").toString('hex');
     var TokenContract = new web3.eth.Contract(abi, { data: codeHex, from: web3.eth.defaultAccount });
     var TokenDeployTransaction = TokenContract.deploy({ data: codeHex, arguments: [10000000] });
-
     // Return new promise
     return new Promise(function (resolve, reject) {
         TokenDeployTransaction.send({
